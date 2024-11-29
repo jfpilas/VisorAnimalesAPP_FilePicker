@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="VisorAnimalesAPP.AddAnimal"
+             Title="Añade Animal">
+    <VerticalStackLayout>
+        <Label 
+            Text="Nombre:"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" />
+        
+        <Entry x:Name="txtNombreAnimal"
+            Placeholder="Escribe el nombre de tu animal" />
+        
+        <Label 
+            Text="Descripción:"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" />
+
+        <Entry x:Name="txtDescripcion"
+            Placeholder="Escribe aqui la descripción del animal" />
+
+        <Label 
+            Text="Imagen:"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" />
+        <Button 
+            Text="Seleccionar archivo"
+            Clicked="OnSeleccionarArchivo"/>
+
+        <Label 
+            Text="Fecha:"
+            VerticalOptions="Start" 
+            HorizontalOptions="Center" />
+        
+        <Entry x:Name="txtFecha"
+            Placeholder="Escribe aqui la fecha de hoy" />
+
+        <Button 
+            Text="Guardar"
+            Clicked="OnGuardarAnimal"/>
+    </VerticalStackLayout>
+</ContentPage>
